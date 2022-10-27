@@ -1,5 +1,63 @@
+@import url(https:fonts.googleapis.com/css2?family=Roboto&display=swap);
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(105deg, #226d54 0%, #5ae9b9 100% );
+}
+h1, h2, h3, h4{
+    margin: 5px;
+}
+form{
+    margin: 5px;
+    padding: 8px;
+}
+
+button{
+    margin: 10px 7px;
+    padding: 30px;
+    border: none;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}   
+
+#ingresar{
+    background-image: url('../img/login-enter.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ingresar:active{
+    background-color: #5ae9b9;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+.container {    
+    width: 600px;    
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.input{
+    padding: 10px;
+    margin: 30px 10px;
+    background-color: #226d54;
+    color: white;
+
 }
