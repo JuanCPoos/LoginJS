@@ -4,11 +4,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: white;
+    
 }
 html{
     height: 100%;
 }
+
 body{
     display: flex;
     justify-content: center;
@@ -22,6 +23,11 @@ body{
 }
 h1, h2, h3, h4{
     margin: 5px;
+    color: white;
+    font-weight: 100;    
+}
+hr{
+    margin-bottom: 10px;
 }
 form{
     margin: 5px;
@@ -43,8 +49,25 @@ button{
     background-repeat: no-repeat;
 }
 #ingresar:active{
-    background-color: #5ae9b9;
+    background-color: transparent;
     box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+#listMenu{
+    background-image: url('../img/list-option.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    top: 100px;
+    max-width: 1290px;
+    min-width: 450px;
+    border-left: 1px solid #000;
+    background-color: white;
+    opacity: 90%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin: 20px;
 }
 .container {    
     width: 550px;    
@@ -61,8 +84,11 @@ button{
 
 .input{
     padding: 10px;
-    margin: 30px 10px;
+    margin: 30px 10px;  
     
-    color: white;
 
+}
+
+.inmuebles{
+    width:430px;
 }
