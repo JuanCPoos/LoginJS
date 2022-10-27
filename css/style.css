@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
 }
 html{
     height: 100%;
@@ -14,7 +15,10 @@ body{
     align-items: center;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(105deg, #226d54 0%, #5ae9b9 100% );
+    /* background: linear-gradient(105deg, #226d54 0%, #5ae9b9 100% ); */
+    background-image: url('../img/img-inmobiliaria.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 h1, h2, h3, h4{
     margin: 5px;
@@ -43,7 +47,7 @@ button{
     box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
 .container {    
-    width: 600px;    
+    width: 550px;    
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     padding: 20px;
@@ -51,13 +55,14 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #226d54;
+    opacity: 90%;
 }
 
 .input{
     padding: 10px;
     margin: 30px 10px;
-    background-color: #226d54;
+    
     color: white;
 
 }
