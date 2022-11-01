@@ -33,6 +33,17 @@ function obtenerListaUsuarios() {
 
 }
 
-function validarCredenciales() {
-    
+function validarCredenciales(pCorreo, pContraseña) {
+    let listaUsuarios = obtenerListaUsuarios();
+    let bAcceso = false;
+
+    for (let i = 0; i < listaUsuarios.length; i++){
+        if (pCorreo == listaUsuarios[i][3] && pContraseña == listaUsuarios[i][4]) {
+            bAcceso = true;
+            sessionStorage.setItem('usuarioActivo', listaUsuarios[i][1] + ' ' + listaUsuarios[i][2]);
+        }
+    }
+
+    return bAcceso;
+
 }

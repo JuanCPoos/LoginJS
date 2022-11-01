@@ -9,7 +9,9 @@
 html{
     height: 100%;
 }
-
+div{
+    display: block;
+}
 body{
     display: flex;
     justify-content: center;
@@ -91,4 +93,22 @@ button{
 
 .inmuebles{
     width:430px;
+}
+
+.navBar{
+    width: 100%;
+    padding: 0 20px
+}
+
+.navBar .wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
