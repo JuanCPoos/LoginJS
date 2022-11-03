@@ -12,18 +12,17 @@
 <body>
     <div class="content">
         <div class="container">
-            <h2>Inicio de Sesión</h2>
+            <h2>Bienvenido</h2>
             <form action="" class="formulario">
-                <input class='input' id="usuario" type="text" name="username" placeholder="Usuario">
-                <input class='input' id="contraseña" type="password" name="contraseña" placeholder="Contraseña">
-                <input type="button" value="Ingresar" id="btnIngresar" onclick="login()">
-            </form>
-            <!-- <button class='btnIngresar' id="ingresar" onclick="login()"></button> -->
+                <input type="text" id="txtCorreo" placeholder="Ingresar Correo">
+                <input type="password" id="txtContrasena" placeholder="Ingresar Contraseña">
 
+                <input type="button" id="btnIngresar" value="Ingresar">
+            </form>
         </div>
     </div>
 
-    <script src="/js/main.js"></script>
+    <script src="/js/logicaNegocioUsuarios.js"></script>
 </body>
 
 </html>

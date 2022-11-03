@@ -6,19 +6,6 @@ usuarioForm = document.getElementById('usuario');
 contraseñaForm = document.getElementById('contraseña');
 buttonForm = document.getElementById('button');
 
-function login() {
-    let user, pass;
-
-    user = document.getElementById('usuario').value;
-    pass = document.getElementById('contraseña').value;
-
-    if (user == 'Miguel' && pass == '1234') {
-        window.location = 'pagina.html';
-    }
-        
-
-}
-
 function obtenerListaUsuarios() { 
     let listaUsuarios = JSON.parse(localStorage.getItem(''));
 
