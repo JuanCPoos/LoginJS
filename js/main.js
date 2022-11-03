@@ -41,6 +41,7 @@ function validarCredenciales(pCorreo, pContraseña) {
         if (pCorreo == listaUsuarios[i][3] && pContraseña == listaUsuarios[i][4]) {
             bAcceso = true;
             sessionStorage.setItem('usuarioActivo', listaUsuarios[i][1] + ' ' + listaUsuarios[i][2]);
+            sessionStorage.setItem('rolUsuarioActivo', listaUsuarios[i][6]);
         }
     }
 
