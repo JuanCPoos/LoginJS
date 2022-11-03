@@ -83,12 +83,25 @@ button{
     background-color: #226d54;
     opacity: 90%;
 }
-
+nav{    
+    border: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #226d54;
+    opacity: 90%;
+}
+main h2{
+    margin: 5px;
+    color: black;
+    font-weight: 100; 
+    background-color: #226d54;    
+}
 .input{
     padding: 10px;
-    margin: 30px 10px;  
-    
-
+    margin: 30px 10px;    
 }
 
 .inmuebles{
