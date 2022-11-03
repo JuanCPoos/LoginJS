@@ -88,7 +88,7 @@ button{
       
 }
 .container-login {    
-    width: 60%;   
+    width: 50%;   
     height: 100%; 
     float: right;
    /*  justify-content: center;
@@ -99,9 +99,12 @@ button{
     
 }
 .container-sistema{
-    width: 40%;
+    width: 42%;
     height: 100%;    
     background-color: #1a4299;
+    background-image: url('../img/desentrastate.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
     float: left;
     /* justify-content: center;
     align-items: center; */
