@@ -1,14 +1,16 @@
-document.querySelector('#btnIngresar').addEventListener('click', verificarStorage);
+document.querySelector('#btnIngresar').addEventListener('click', iniciarSesion);
 document.querySelector('#btnLimpiar').addEventListener('click', limpiar);
 
 /* función para verificar si el navegador soporta el trabajo Storage*/
-function verificarStorage(){
+/* function verificarStorage(){
     if(typeoff(Storage) !== 'undefined'){
         iniciarSesion();
     }else{
-        <!-- navegador no soporta storage -->
+        
     }
-}
+} */
+
+
 /* función para tomar los datos ingresados en input de correo y password, validarlos y derivar
 * al tipo de rol de usuario. Si el bool bAcesso es true se ejecuta la función ingresar()*/
 function iniciarSesion() {
