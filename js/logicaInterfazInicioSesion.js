@@ -1,5 +1,13 @@
-document.querySelector('#btnIngresar').addEventListener('click', iniciarSesion);
+document.querySelector('#btnIngresar').addEventListener('click', verificarStorage);
 document.querySelector('#btnLimpiar').addEventListener('click', limpiar);
+
+function verificarStorage(){
+    if(typeoff(Storage) !== 'undefined'){
+        iniciarSesion();
+    }else{
+        <!-- navegador no soporta storage -->
+    }
+}
 
 function iniciarSesion() {
     let sCorreo = "";
