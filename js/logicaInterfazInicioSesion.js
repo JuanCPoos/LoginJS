@@ -1,7 +1,7 @@
 document.querySelector('#btnIngresar').addEventListener('click', verificarStorage);
 document.querySelector('#btnLimpiar').addEventListener('click', limpiar);
 
-<!-- función para verificar si el navegador soporta el trabajo Storage --> 
+/* función para verificar si el navegador soporta el trabajo Storage*/
 function verificarStorage(){
     if(typeoff(Storage) !== 'undefined'){
         iniciarSesion();
@@ -9,7 +9,8 @@ function verificarStorage(){
         <!-- navegador no soporta storage -->
     }
 }
-<!-- función para tomar los datos ingresados en input de correo y password, validarlos y derivar al tipo de rol de usuario. Si el bool bAcesso es true se ejecuta la función ingresar() -->
+/* función para tomar los datos ingresados en input de correo y password, validarlos y derivar
+* al tipo de rol de usuario. Si el bool bAcesso es true se ejecuta la función ingresar()*/
 function iniciarSesion() {
     let sCorreo = "";
     let sContrasena = "";
@@ -43,14 +44,14 @@ function iniciarSesion() {
                 break;
         }
 }
-<!-- función para poner en blanco los input de html -->   
+/*función para poner en blanco los input de html */   
 function limpiar() { 
     document.querySelector('#txtCorreo').value = '';
     document.querySelector('#txtContrasena').value = '';
     let bAcceso = false;
 }
 
-<!-- función para limpiar con clear() los datos almacenados en el navegador, local o de pestaña -->
+/* función para limpiar con clear() los datos almacenados en el navegador, local o de pestaña */
 function limpiarStorage(){
     localStorage.clear();
     sessionStorage.clear();
