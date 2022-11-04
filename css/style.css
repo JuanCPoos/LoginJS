@@ -22,6 +22,7 @@ body{
     background-image: url('../img/img-inmobiliaria.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 h1, h2, h3, h4{
     margin: 5px;
@@ -31,10 +32,7 @@ h1, h2, h3, h4{
 hr{
     margin-bottom: 10px;
 }
-form{
-    margin: 5px;
-    padding: 8px;
-}
+
 
 button{
     margin: 10px 7px;
@@ -45,10 +43,11 @@ button{
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }   
 
-#ingresar{
+.btningresar{
     background-image: url('../img/login-enter.png');
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
 }
 #ingresar:active{
     background-color: transparent;
@@ -59,7 +58,7 @@ button{
     background-position: center;
     background-repeat: no-repeat;
 }
-.wrapper{
+/* .wrapper{
     top: 100px;
     max-width: 1290px;
     min-width: 450px;
@@ -70,36 +69,42 @@ button{
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
     padding: 30px;
     margin: 20px;
-}
+} */
 .content{
     width: 1000px;
     max-width: 1200px;    
     min-width: 450px;
-    height: 450px;
+    height: 500px;
     max-height: 600px;
     min-height: 200px;
     border: 1px solid rgb(44, 44, 44);   
-    box-shadow: 2px 2px 8px rgba(53, 53, 53, 0.6);      
+    box-shadow: 2px 2px 8px rgba(53, 53, 53, 0.452);      
     margin: 10px;
-    display: inline;
-    flex-direction: column;
+    display: inline;    
     justify-content: center;
-    align-items: center;
-      
+    align-items: center;      
 }
+form{
+    border: 1px solid rgba(0, 0, 0, 0.452);    
+    width: 270px;
+    margin: auto;
+    padding: 25px 8px;
+}
+
 .container-login {    
     width: 50%;   
     height: 100%; 
     float: right;
-   /*  justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     border-left: 1.7px solid gray;
     background-color: white;
     color: rgb(31, 30, 30);
+    display: flex;
     
 }
 .container-sistema{
-    width: 42%;
+    width: 50%;
     height: 100%;    
     background-color: #1a4299;
     background-image: url('../img/desentrastate.jpeg');

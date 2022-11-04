@@ -7,20 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Inmobiliaria Rey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="content">
         <div class="container-sistema">
         </div>
-        <div class="container-login">
-            <h2>Bienvenido</h2>
-            <form action="" class="formulario">
-                <input type="text" id="txtCorreo" placeholder="Ingresar Correo">
-                <input type="password" id="txtContrasena" placeholder="Ingresar Contraseña">
-
-                <input type="button" id="btnIngresar" value="Ingresar">
+        <div class="container-login bg-white p-3 rounded-end">
+            <form action="#">
+                <div class="mb-4">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input class="form-control" type="text" id="txtCorreo" name="email">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input class="form-control" type="password" id="txtContrasena" name="password">
+                </div>
+                <div class="mb-4 form-check">
+                    <input type="checkbox" name="connected" class="form-check-input">
+                    <label for="connected" class="form-check-label">Manter sesión iniciada</label>
+                </div>
+                <div class="d-grid gap-2">
+                    <input type="button" class="btn btn-primary" value="Iniciar Sesión" id="btnIngresar">
+                    <!-- <button type="submit" class="btn btn-primary">Iniciar Sesión</button> -->
+                </div>
+                <div class="d-grid gap-2 mt-2">
+                    <input type="button" class="btn btn-secondary" value="Borrar" id="btnLimpiar">
+                </div>
+                <div class="my-3">
+                    <span><a href="#">Recuperar Contraseña</a></span>
+                </div>
             </form>
+
+
+
+
         </div>
     </div>
 

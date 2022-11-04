@@ -1,4 +1,5 @@
 document.querySelector('#btnIngresar').addEventListener('click', iniciarSesion);
+document.querySelector('#btnLimpiar').addEventListener('click', limpiar);
 
 function iniciarSesion() {
     let sCorreo = "";
@@ -28,9 +29,17 @@ function iniciarSesion() {
                 window.location.href = "cliente.html";
                 break;
             default:
-                window.location.href="index.html";
+                window.location.href = "index.html";
+                alert('usuario incompatible');
                 break;
         }
-   }
+}
+   
+function limpiar() { 
+    document.querySelector('#txtCorreo').value = '';
+    document.querySelector('#txtContrasena').value = '';
+    let bAcceso = false;
+}
+
     
 
